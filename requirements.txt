@@ -1,0 +1,15 @@
+# SSL Certificate Client Requirements
+# Core dependencies for the SSL certificate client
+
+# HTTP library for API requests
+requests>=2.25.0
+
+# Note: The following modules are part of Python standard library:
+# - os
+# - sys  
+# - json
+# - argparse
+# - ipaddress
+# - pathlib
+# - datetime
+# - logging

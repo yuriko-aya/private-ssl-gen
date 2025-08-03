@@ -1,0 +1,11 @@
+[Unit]
+Description=Run SDM SSL Certificate Renewal Monthly
+Requires=sdm-ssl-renewal.service
+
+[Timer]
+OnCalendar=monthly
+Persistent=true
+RandomizedDelaySec=3600
+
+[Install]
+WantedBy=timers.target

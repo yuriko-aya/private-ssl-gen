@@ -1,0 +1,24 @@
+{
+  "token": "sdm_your_api_token_here",
+  "ip_address": "192.168.1.100",
+  "base_url": "https://sslgen.sanusi.id",
+  "cert_dir": "/etc/ssl/sdmcert",
+  "renewal_days": 30,
+  "notification": {
+    "enabled": true,
+    "email": "admin@yourdomain.com",
+    "webhook": "https://your-webhook-url.com/notify"
+  },
+  "certificates": [
+    {
+      "ip_address": "192.168.1.100",
+      "description": "Web server",
+      "post_hook": "systemctl reload nginx"
+    },
+    {
+      "ip_address": "192.168.1.200",
+      "description": "API server",
+      "post_hook": "systemctl reload apache2"
+    }
+  ]
+}
